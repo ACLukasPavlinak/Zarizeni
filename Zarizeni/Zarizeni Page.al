@@ -4,6 +4,7 @@ page 50101 "Zarizeni_page"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = Zarizeni_tab;
+    CardPageId = "Zarizeni_card";
     Caption = 'Dostupná zařízení';
 
     layout
@@ -37,9 +38,20 @@ page 50101 "Zarizeni_page"
             }
         }
     }
-
-    trigger OnQueryClosePage(CloseAction: Action): Boolean
-    begin
-        Rec.TestField(Name);
-    end;
+    actions
+    {
+        area(Processing)
+        {
+            action("Můj report")
+            {
+                Promoted = true;
+                PromotedCategory = Process;
+                ApplicationArea = All;
+                trigger OnAction()
+                begin
+                    report.Run(Report::Zarizeni_report);
+                end;
+            }
+        }
+    }
 }

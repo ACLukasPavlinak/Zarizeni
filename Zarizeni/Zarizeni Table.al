@@ -4,6 +4,8 @@ table 50100 "Zarizeni_tab"
     Caption = 'Zařízení';
     DrillDownPageId = "Zarizeni_page";
     LookupPageId = "Zarizeni_page";
+    DataCaptionFields = No, Name;
+
 
     fields
     {

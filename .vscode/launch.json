@@ -7,7 +7,7 @@
             "type": "al",
             "environmentType": "Sandbox",
             "environmentName": "SandBox_zarizeni",
-            "startupObjectId": 22,
+            "startupObjectId": 9022,
             "startupObjectType": "Page",
             "breakOnError": true,
             "launchBrowser": true,
