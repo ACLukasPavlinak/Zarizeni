@@ -6,7 +6,7 @@ page 50101 "Zarizeni_page"
     SourceTable = Zarizeni_tab;
     CardPageId = "Zarizeni_card";
     Caption = 'Dostupná zařízení';
-    //ashdjasdhas
+    //Novavetev
 
     layout
     {
